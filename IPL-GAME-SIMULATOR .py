@@ -1,11 +1,22 @@
+#import time and random module 
 import random
 import time
+
+#teams and options
 teams = ["MI","CSK","SRH","KKR","PBKS","DC","RR","RCB"]
 options = ["Bowl","Bat"]
+
+#option to bat or bowl
 choice = random.choice(options)
+
+#picks teams to play
 team1 = random.choice(teams)
 team2 = random.choice(teams)
+
+#list of both the teams playing
 teams_playing = [team1,team2]
+
+#if both the teams are same, the match is canceled, else the code is run
 if team1 == team2:
     print("The Match was Canceled due to rain.")
 else:
